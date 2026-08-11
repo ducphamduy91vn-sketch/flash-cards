@@ -2,6 +2,10 @@
 
 Ứng dụng Flash Cards được xây dựng bằng **React + TypeScript + Vite**, dùng để học và ôn tập các câu hỏi kiến thức, đặc biệt phù hợp cho việc luyện tập **JavaScript interview questions**.
 
+🔗 Project URL
+
+https://ducphamduy91vn-sketch.github.io/flash-cards/
+
 ## 🚀 Features
 
 * Hiển thị từng câu hỏi dạng Flash Card.
