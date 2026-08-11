@@ -1,75 +1,105 @@
-# React + TypeScript + Vite
+# Flash Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng Flash Cards được xây dựng bằng **React + TypeScript + Vite**, dùng để học và ôn tập các câu hỏi kiến thức, đặc biệt phù hợp cho việc luyện tập **JavaScript interview questions**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Hiển thị từng câu hỏi dạng Flash Card.
+* Hiển thị/ẩn đáp án.
+* Chuyển sang câu hỏi tiếp theo.
+* Quay lại câu hỏi trước.
+* Thanh tiến trình hiển thị tiến độ hiện tại.
+* Giao diện đơn giản, dễ sử dụng.
 
-## React Compiler
+## 🛠️ Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* Vite
+* CSS
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Clone project:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/ducphamduy91vn-sketch/flash-cards.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Di chuyển vào thư mục project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd flash-cards
 ```
+
+Cài đặt dependencies:
+
+```bash
+npm install
+```
+
+Chạy project ở môi trường development:
+
+```bash
+npm run dev
+```
+
+Sau đó mở đường dẫn được hiển thị trong terminal, thường là:
+
+```text
+http://localhost:5173
+```
+
+## 📖 How to use
+
+1. Mở ứng dụng.
+2. Đọc câu hỏi hiện tại.
+3. Nhấn **Show Answer** để xem đáp án.
+4. Nhấn **Next** để chuyển sang câu hỏi tiếp theo.
+5. Nhấn **Previous** để quay lại câu hỏi trước.
+6. Theo dõi thanh tiến trình để biết bạn đã hoàn thành bao nhiêu câu hỏi.
+
+## 📁 Project Structure
+
+```text
+flash-cards/
+├── public/
+├── src/
+│   ├── database.ts
+│   ├── App.tsx
+│   ├── App.css
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## 🎯 Purpose
+
+Project được thực hiện nhằm luyện tập:
+
+* React Components
+* React Hooks
+* TypeScript
+* State Management với `useState`
+* Event Handling
+* CSS Styling
+* Git & GitHub
+
+## 📌 Future Improvements
+
+Một số tính năng có thể phát triển thêm:
+
+* Thêm nhiều bộ câu hỏi.
+* Random câu hỏi.
+* Theo dõi số câu trả lời đúng/sai.
+* Chế độ Dark Mode.
+* Lưu tiến trình học.
+* Responsive cho mobile.
+* Thêm animation khi chuyển Flash Card.
+
+## 📄 License
+
+This project is for learning and personal practice.
